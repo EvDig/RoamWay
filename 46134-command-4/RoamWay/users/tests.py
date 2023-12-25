@@ -266,7 +266,7 @@ class UserActivationTests(TestCase):
 
         signed_username = self.signer.sign(self.username)
 
-        with freeze_time("2023-12-25"):
+        with freeze_time("2024-12-25"):
             self.client.get(
                 reverse(
                     "users:activate",
